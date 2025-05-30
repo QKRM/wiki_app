@@ -5,6 +5,7 @@ import android.text.Spanned
 import android.text.method.LinkMovementMethod
 import android.webkit.WebView
 import android.webkit.WebViewClient
+import android.webkit.WebSettings
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -30,16 +31,34 @@ fun ArticleText(
                     domStorageEnabled = true
                     loadWithOverviewMode = true
                     useWideViewPort = true
+                    mixedContentMode = WebSettings.MIXED_CONTENT_ALWAYS_ALLOW
+                    allowFileAccess = true
+                    allowContentAccess = true
+                    mediaPlaybackRequiresUserGesture = false
                 }
-                webViewClient = WebViewClient()
+                webViewClient = object : WebViewClient() {
+                    override fun shouldOverrideUrlLoading(view: WebView?, url: String?): Boolean {
+                        return false
+                    }
+                }
             }
         },
         update = { webView ->
+            val fixedContent = content
+                .replace(
+                    Regex("""(?<!<img )src=\"([^\"]+)\"\s*/?>"""),
+                    "<img src=\"$1\" />"
+                )
+                .replace(
+                    Regex("src=\"images/"),
+                    "src=\"posts/images/"
+                )
             val htmlContent = """
                 <!DOCTYPE html>
                 <html>
                 <head>
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <base href="file:///android_asset/">
                     <style>
                         :root {
                             --primary-color: #2E7D32;
@@ -118,7 +137,7 @@ fun ArticleText(
                         
                         th {
                             background-color: var(--primary-color);
-                            color: white;
+                            color: black;
                             font-weight: bold;
                         }
                         
@@ -162,11 +181,11 @@ fun ArticleText(
                     </style>
                 </head>
                 <body>
-                    $content
+                    $fixedContent
                 </body>
                 </html>
             """.trimIndent()
-            webView.loadDataWithBaseURL(null, htmlContent, "text/html", "UTF-8", null)
+            webView.loadDataWithBaseURL("file:///android_asset/posts/", htmlContent, "text/html", "UTF-8", null)
         }
     )
 } 
