@@ -41,7 +41,7 @@ object FileUtils {
         } catch (e: Exception) {
             Log.e(TAG, "Error reading file $filePath: ${e.message}", e)
             e.printStackTrace()
-            "File not found: $filePath"
+            "파일을 찾을 수 없습니다: $filePath"
         }
     }
 } 
