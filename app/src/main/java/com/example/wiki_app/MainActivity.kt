@@ -69,7 +69,7 @@ fun CategoryListScreen(navController: NavController) {
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("농업 위키") },
+                title = { Text("Good Farmers Wiki") },
                 colors = TopAppBarDefaults.topAppBarColors(
                     containerColor = Color(0xFF2E7D32),
                     titleContentColor = Color.White
@@ -113,10 +113,10 @@ fun CategoryCard(category: String, navController: NavController) {
         ) {
             Text(
                 text = when(category) {
-                    "goat" -> "염소"
-                    "cow" -> "소"
-                    "chicken" -> "닭"
-                    "crops" -> "작물"
+                    "goat" -> "Goat"
+                    "cow" -> "Cow"
+                    "chicken" -> "Chicken"
+                    "crops" -> "Crops"
                     else -> category
                 },
                 fontSize = 18.sp,
@@ -136,15 +136,15 @@ fun CategoryPageScreen(navController: NavController, category: String) {
         topBar = {
             TopAppBar(
                 title = { Text(when(category) {
-                    "goat" -> "염소"
-                    "cow" -> "소"
-                    "chicken" -> "닭"
-                    "crops" -> "작물"
+                    "goat" -> "Goat"
+                    "cow" -> "Cow"
+                    "chicken" -> "Chicken"
+                    "crops" -> "Crops"
                     else -> category
                 }) },
                 navigationIcon = {
                     IconButton(onClick = { navController.navigateUp() }) {
-                        Icon(Icons.Default.ArrowBack, contentDescription = "뒤로가기")
+                        Icon(Icons.Default.ArrowBack, contentDescription = "Back")
                     }
                 },
                 colors = TopAppBarDefaults.topAppBarColors(
@@ -209,7 +209,7 @@ fun PostPageScreen(navController: NavController, category: String, fileName: Str
                 title = { Text(fileName.replace(".html", "")) },
                 navigationIcon = {
                     IconButton(onClick = { navController.navigateUp() }) {
-                        Icon(Icons.Default.ArrowBack, contentDescription = "뒤로가기")
+                        Icon(Icons.Default.ArrowBack, contentDescription = "Back")
                     }
                 },
                 colors = TopAppBarDefaults.topAppBarColors(
