@@ -141,8 +141,15 @@ fun CategoryPageScreen(navController: NavController, category: String) {
             posts
         } else {
             posts.filter { post ->
+                // HTML 태그와 CSS 속성값들을 제거
+                val cleanContent = post.content
+                    .replace(Regex("<style[^>]*>.*?</style>", RegexOption.DOT_MATCHES_ALL), "") // style 태그 제거
+                    .replace(Regex("<[^>]*>"), "") // 나머지 HTML 태그 제거
+                    .replace(Regex("\\s+"), " ") // 연속된 공백을 하나로
+                    .trim()
+                
                 post.title.contains(searchQuery, ignoreCase = true) ||
-                post.content.contains(searchQuery, ignoreCase = true)
+                cleanContent.contains(searchQuery, ignoreCase = true)
             }
         }
     }
@@ -176,7 +183,7 @@ fun CategoryPageScreen(navController: NavController, category: String) {
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(16.dp),
-                    placeholder = { Text("검색어를 입력하세요") },
+                    placeholder = { Text("Enter search term") },
                     leadingIcon = {
                         Icon(
                             imageVector = Icons.Default.Search,
@@ -247,10 +254,11 @@ fun PostCard(
             )
             if (searchQuery.isNotEmpty() && post.content.contains(searchQuery, ignoreCase = true)) {
                 Spacer(modifier = Modifier.height(8.dp))
+                val cleanContent = post.content.replace(Regex("<[^>]*>"), "")
                 Text(
-                    text = "...${post.content.substring(
-                        maxOf(0, post.content.indexOf(searchQuery, ignoreCase = true) - 20),
-                        minOf(post.content.length, post.content.indexOf(searchQuery, ignoreCase = true) + searchQuery.length + 20)
+                    text = "...${cleanContent.substring(
+                        maxOf(0, cleanContent.indexOf(searchQuery, ignoreCase = true) - 20),
+                        minOf(cleanContent.length, cleanContent.indexOf(searchQuery, ignoreCase = true) + searchQuery.length + 20)
                     )}...",
                     fontSize = 14.sp,
                     color = Color.Gray,
