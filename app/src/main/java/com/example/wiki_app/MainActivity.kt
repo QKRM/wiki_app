@@ -11,6 +11,7 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -131,28 +132,67 @@ fun CategoryCard(category: String, navController: NavController) {
 @Composable
 fun CategoryPageScreen(navController: NavController, category: String) {
     val posts = FileUtils.getCategoryPosts(LocalContext.current, category)
+    var searchQuery by remember { mutableStateOf("") }
+    var filteredPosts by remember { mutableStateOf(posts) }
+    
+    // 검색어가 변경될 때마다 게시글 필터링
+    LaunchedEffect(searchQuery, posts) {
+        filteredPosts = if (searchQuery.isEmpty()) {
+            posts
+        } else {
+            posts.filter { post ->
+                post.title.contains(searchQuery, ignoreCase = true) ||
+                post.content.contains(searchQuery, ignoreCase = true)
+            }
+        }
+    }
     
     Scaffold(
         topBar = {
-            TopAppBar(
-                title = { Text(when(category) {
-                    "goat" -> "Goat"
-                    "cow" -> "Cow"
-                    "chicken" -> "Chicken"
-                    "crops" -> "Crops"
-                    else -> category
-                }) },
-                navigationIcon = {
-                    IconButton(onClick = { navController.navigateUp() }) {
-                        Icon(Icons.Default.ArrowBack, contentDescription = "Back")
-                    }
-                },
-                colors = TopAppBarDefaults.topAppBarColors(
-                    containerColor = Color(0xFF2E7D32),
-                    titleContentColor = Color.White,
-                    navigationIconContentColor = Color.White
+            Column {
+                TopAppBar(
+                    title = { Text(when(category) {
+                        "goat" -> "Goat"
+                        "cow" -> "Cow"
+                        "chicken" -> "Chicken"
+                        "crops" -> "Crops"
+                        else -> category
+                    }) },
+                    navigationIcon = {
+                        IconButton(onClick = { navController.navigateUp() }) {
+                            Icon(Icons.Default.ArrowBack, contentDescription = "Back")
+                        }
+                    },
+                    colors = TopAppBarDefaults.topAppBarColors(
+                        containerColor = Color(0xFF2E7D32),
+                        titleContentColor = Color.White,
+                        navigationIconContentColor = Color.White
+                    )
                 )
-            )
+                // 검색창
+                OutlinedTextField(
+                    value = searchQuery,
+                    onValueChange = { searchQuery = it },
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(16.dp),
+                    placeholder = { Text("검색어를 입력하세요") },
+                    leadingIcon = {
+                        Icon(
+                            imageVector = Icons.Default.Search,
+                            contentDescription = "Search"
+                        )
+                    },
+                    singleLine = true,
+                    colors = TextFieldDefaults.colors(
+                        focusedContainerColor = Color.White,
+                        unfocusedContainerColor = Color.White,
+                        focusedIndicatorColor = Color(0xFF2E7D32),
+                        unfocusedIndicatorColor = Color(0xFF2E7D32),
+                        cursorColor = Color(0xFF2E7D32)
+                    )
+                )
+            }
         }
     ) { paddingValues ->
         LazyColumn(
@@ -160,18 +200,28 @@ fun CategoryPageScreen(navController: NavController, category: String) {
                 .fillMaxSize()
                 .padding(paddingValues)
                 .background(Color(0xFFF1F8E9))
-                .padding(16.dp),
+                .padding(horizontal = 16.dp),
             verticalArrangement = Arrangement.spacedBy(12.dp)
         ) {
-            items(posts) { post ->
-                PostCard(post = post, category = category, navController = navController)
+            items(filteredPosts) { post ->
+                PostCard(
+                    post = post,
+                    category = category,
+                    navController = navController,
+                    searchQuery = searchQuery
+                )
             }
         }
     }
 }
 
 @Composable
-fun PostCard(post: Post, category: String, navController: NavController) {
+fun PostCard(
+    post: Post,
+    category: String,
+    navController: NavController,
+    searchQuery: String
+) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
@@ -184,7 +234,7 @@ fun PostCard(post: Post, category: String, navController: NavController) {
             defaultElevation = 4.dp
         )
     ) {
-        Box(
+        Column(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(16.dp)
@@ -192,8 +242,21 @@ fun PostCard(post: Post, category: String, navController: NavController) {
             Text(
                 text = post.title,
                 fontSize = 16.sp,
-                color = Color(0xFF2E7D32)
+                color = Color(0xFF2E7D32),
+                fontWeight = FontWeight.Bold
             )
+            if (searchQuery.isNotEmpty() && post.content.contains(searchQuery, ignoreCase = true)) {
+                Spacer(modifier = Modifier.height(8.dp))
+                Text(
+                    text = "...${post.content.substring(
+                        maxOf(0, post.content.indexOf(searchQuery, ignoreCase = true) - 20),
+                        minOf(post.content.length, post.content.indexOf(searchQuery, ignoreCase = true) + searchQuery.length + 20)
+                    )}...",
+                    fontSize = 14.sp,
+                    color = Color.Gray,
+                    maxLines = 2
+                )
+            }
         }
     }
 }

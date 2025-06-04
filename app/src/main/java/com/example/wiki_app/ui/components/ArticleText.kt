@@ -43,7 +43,7 @@ fun ArticleText(
                 }
             }
         },
-        update = { webView ->
+        update = { webView: WebView ->
             val fixedContent = content
                 .replace(
                     Regex("""(?<!<img )src=\"([^\"]+)\"\s*/?>"""),
@@ -53,6 +53,7 @@ fun ArticleText(
                     Regex("src=\"images/"),
                     "src=\"posts/images/"
                 )
+            
             val htmlContent = """
                 <!DOCTYPE html>
                 <html>
