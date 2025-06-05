@@ -46,6 +46,10 @@ fun ArticleText(
         update = { webView: WebView ->
             val fixedContent = content
                 .replace(
+                    Regex("""<p>src="([^"]+)"[^>]*/></p>"""),
+                    "<p><img src=\"$1\" /></p>"
+                )
+                .replace(
                     Regex("""(?<!<img )src=\"([^\"]+)\"\s*/?>"""),
                     "<img src=\"$1\" />"
                 )
