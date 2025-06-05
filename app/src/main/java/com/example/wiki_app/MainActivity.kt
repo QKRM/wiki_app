@@ -3,6 +3,7 @@ package com.example.wiki_app
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -17,7 +18,9 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -107,11 +110,13 @@ fun CategoryCard(category: String, navController: NavController) {
             defaultElevation = 4.dp
         )
     ) {
-        Box(
+        Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(16.dp)
+                .padding(16.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
         ) {
+            // 카테고리 텍스트
             Text(
                 text = when(category) {
                     "goat" -> "Goat"
@@ -120,9 +125,28 @@ fun CategoryCard(category: String, navController: NavController) {
                     "crops" -> "Crops"
                     else -> category
                 },
-                fontSize = 18.sp,
+                fontSize = 24.sp,
                 fontWeight = FontWeight.Bold,
-                color = Color(0xFF2E7D32)
+                color = Color(0xFF2E7D32),
+                modifier = Modifier.padding(bottom = 16.dp)
+            )
+            
+            // 카테고리 이미지
+            Image(
+                painter = painterResource(
+                    id = when(category) {
+                        "goat" -> R.drawable.goat_image
+                        "cow" -> R.drawable.cow_image
+                        "chicken" -> R.drawable.chicken_image
+                        "crops" -> R.drawable.crops_image
+                        else -> R.drawable.default_image
+                    }
+                ),
+                contentDescription = "Category Image",
+                contentScale = ContentScale.FillWidth,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(240.dp)
             )
         }
     }
