@@ -6,11 +6,16 @@ import java.io.BufferedReader
 
 object FileUtils {
     private const val TAG = "FileUtils"
+    private var selectedCountry = "UG" // 기본값을 UG로 설정
+
+    fun setSelectedCountry(country: String) {
+        selectedCountry = country
+    }
 
     fun getCategoryPosts(context: Context, category: String): List<Post> {
         val posts = mutableListOf<Post>()
         try {
-            val files = context.assets.list("posts/$category") ?: return emptyList()
+            val files = context.assets.list("posts/$selectedCountry/$category") ?: return emptyList()
             Log.d(TAG, "Found files in category $category: ${files.joinToString()}")
             
             files.filter { it.endsWith(".html") }
@@ -19,7 +24,7 @@ object FileUtils {
                     Post(
                         title = fileName.replace(".html", ""),
                         content = content,
-                        path = "posts/$category/$fileName"
+                        path = "posts/$selectedCountry/$category/$fileName"
                     )
                 }
                 .sortedBy { it.title }
@@ -32,7 +37,7 @@ object FileUtils {
     }
 
     fun getPostContent(context: Context, category: String, fileName: String): String {
-        val filePath = "posts/$category/$fileName"
+        val filePath = "posts/$selectedCountry/$category/$fileName"
         return try {
             Log.d(TAG, "Trying to read file: $filePath")
             val inputStream = context.assets.open(filePath)

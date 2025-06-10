@@ -71,7 +71,7 @@ fun WikiApp() {
 fun CategoryListScreen(navController: NavController) {
     val categories = listOf("goat", "cow", "chicken", "crops")
     var showMenu by remember { mutableStateOf(false) }
-    var selectedCountry by remember { mutableStateOf("") }
+    var selectedCountry by remember { mutableStateOf("UG") }
     
     Scaffold(
         topBar = {
@@ -94,6 +94,7 @@ fun CategoryListScreen(navController: NavController) {
                                 text = { Text("UG") },
                                 onClick = {
                                     selectedCountry = "UG"
+                                    FileUtils.setSelectedCountry("UG")
                                     showMenu = false
                                 }
                             )
@@ -101,6 +102,7 @@ fun CategoryListScreen(navController: NavController) {
                                 text = { Text("LA") },
                                 onClick = {
                                     selectedCountry = "LA"
+                                    FileUtils.setSelectedCountry("LA")
                                     showMenu = false
                                 }
                             )
@@ -108,6 +110,7 @@ fun CategoryListScreen(navController: NavController) {
                                 text = { Text("KH") },
                                 onClick = {
                                     selectedCountry = "KH"
+                                    FileUtils.setSelectedCountry("KH")
                                     showMenu = false
                                 }
                             )
@@ -115,6 +118,7 @@ fun CategoryListScreen(navController: NavController) {
                                 text = { Text("BD") },
                                 onClick = {
                                     selectedCountry = "BD"
+                                    FileUtils.setSelectedCountry("BD")
                                     showMenu = false
                                 }
                             )
