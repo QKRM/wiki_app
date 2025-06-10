@@ -12,6 +12,7 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -69,14 +70,63 @@ fun WikiApp() {
 @Composable
 fun CategoryListScreen(navController: NavController) {
     val categories = listOf("goat", "cow", "chicken", "crops")
+    var showMenu by remember { mutableStateOf(false) }
+    var selectedCountry by remember { mutableStateOf("") }
     
     Scaffold(
         topBar = {
             TopAppBar(
                 title = { Text("Good Farmers Wiki") },
+                actions = {
+                    Box {
+                        IconButton(onClick = { showMenu = true }) {
+                            Icon(
+                                imageVector = Icons.Default.Menu,
+                                contentDescription = "Menu",
+                                tint = Color.White
+                            )
+                        }
+                        DropdownMenu(
+                            expanded = showMenu,
+                            onDismissRequest = { showMenu = false }
+                        ) {
+                            DropdownMenuItem(
+                                text = { Text("UG") },
+                                onClick = {
+                                    selectedCountry = "UG"
+                                    showMenu = false
+                                }
+                            )
+                            DropdownMenuItem(
+                                text = { Text("LA") },
+                                onClick = {
+                                    selectedCountry = "LA"
+                                    showMenu = false
+                                }
+                            )
+                            DropdownMenuItem(
+                                text = { Text("KH") },
+                                onClick = {
+                                    selectedCountry = "KH"
+                                    showMenu = false
+                                }
+                            )
+                            DropdownMenuItem(
+                                text = { Text("BD") },
+                                onClick = {
+                                    selectedCountry = "BD"
+                                    showMenu = false
+                                }
+                            )
+                        }
+                    }
+                },
                 colors = TopAppBarDefaults.topAppBarColors(
                     containerColor = Color(0xFF2E7D32),
-                    titleContentColor = Color.White
+                    titleContentColor = Color.White,
+                    actionIconContentColor = Color.White,
+                    navigationIconContentColor = Color.White,
+                    scrolledContainerColor = Color(0xFF2E7D32)
                 )
             )
         }
