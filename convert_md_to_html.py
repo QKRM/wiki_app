@@ -150,8 +150,8 @@ def process_directory(input_dir, output_dir):
 
 def main():
     # 입력 및 출력 디렉토리 설정
-    input_dir = 'app/src/posts'
-    output_dir = 'app/src/main/assets/posts'
+    input_dir = 'app/src/main/assets/posts/cow'
+    output_dir = 'app/src/main/assets/posts/cow'
     
     # 출력 디렉토리가 없으면 생성
     os.makedirs(output_dir, exist_ok=True)
