@@ -1,0 +1,53 @@
+# 1. Structure and Function of the Stomach
+
+## □ Structure
+
+Goats are ruminant livestock, similar to cattle and sheep, and possess a specialized digestive system. Their stomach is divided into four compartments: the **rumen (1st stomach)**, **reticulum (2nd stomach)**, **omasum (3rd stomach)**, and **abomasum (4th stomach)**.
+
+The **rumen** has a large capacity and hosts microorganisms that break down fibrous materials and non-protein nitrogen compounds such as urea, which cannot be digested by monogastric animals. This microbial fermentation allows goats to utilize these materials for growth.
+
+However, young goats (before 2–3 months of age) have underdeveloped rumen function, and most digestion takes place in the **abomasum (true stomach)**. By around 5 months of age, the rumen becomes fully functional and capable of digesting coarse roughage effectively.
+
+The **reticulum**, also known as the "honeycomb," works similarly to the rumen and also houses microorganisms such as bacteria and protozoa. These microbes ferment ingested feed, converting carbohydrates into volatile fatty acids (VFAs), methane, and carbon dioxide, and proteins into amino acids and ammonia. Microbial protein is digested and absorbed, while undegraded feed protein passes through the rumen and is digested in the small intestine.
+
+The **omasum** mainly absorbs water and prevents large particles from moving into the abomasum.
+
+The **abomasum**, similar to a monogastric stomach, secretes digestive enzymes and functions as the true stomach.
+
+## □ Development of the Rumen
+
+At birth, the rumen of a black goat is very small and functionally inactive, whereas the abomasum is relatively well-developed. As the goat matures, the rumen grows to more than 10 times the size of the abomasum and takes over its role as the primary digestive organ.
+
+By 3 months of age, significant rumen development is observed. As microorganisms establish themselves in the rumen, they begin aiding in digestion.
+
+During the nursing period, young goats rely primarily on the abomasum for digestion, similar to monogastric animals. To stimulate rumen development, it is essential to provide high-quality solid feeds (starter feeds) from around 5 days after birth, aiming for weaning before 3 months of age.
+
+These weaning feeds promote the production of VFAs—acetic, propionic, and butyric acids—which chemically stimulate rumen development. Palatable and fermentable feeds such as beet pulp are ideal.
+
+Feeding quality roughage serves to expand rumen volume and increase the thickness of the rumen wall (physical development). Energy-rich feeds enhance microbial fermentation and VFA production, providing energy to the rumen wall and improving papillae absorption capacity (functional development). With adequate feed, early weaning and rumen development are achievable.
+
+## □ Rumen Function and Digestion
+
+Goats regurgitate small amounts of rumen content, chew it again (cud-chewing), mix it with saliva, and swallow it back. A single rumination session lasts around 40–50 minutes, with a daily average of 7–8 hours. Rumination is reflexively triggered by the physical stimulation of feed against the walls of the rumen and reticulum, and smaller feed particles result in shorter rumination time.
+
+The rumen is referred to as a "fermentation vat" because most fermentation and digestion of roughage occurs here. Since goats cannot enzymatically digest fiber, microbial fermentation in the rumen is crucial.
+
+However, feeding highly fatty diets can reduce fermentation efficiency. Fermentation leads to energy loss—only about 70–85% of the energy is utilized, with 6–15% lost as methane gas and 6–7% as heat. Compared to monogastric animals like chickens and pigs, ruminants have lower feed conversion efficiency due to these energy losses.
+
+## □ Digestion
+
+The rumen and reticulum are not clearly separated and are collectively referred to as the **forestomach** or **1st and 2nd stomachs**. Contents move freely between the two, and their functions are very similar.
+
+- **Carbohydrates** are broken down into volatile fatty acids (VFAs) and methane gas.
+- **Proteins** are decomposed into amino acids and ammonia.
+- **Fats** undergo hydrolysis and hydrogenation to become free fatty acids.
+
+Microorganisms also synthesize protein and B vitamins. VFAs, ammonia, and water are absorbed through the rumen wall.
+
+Foreign objects like nails or metal pieces may accumulate in the **reticulum**.
+
+Goats are known for high roughage intake relative to their body weight and have excellent roughage utilization. Compared to sheep and cattle, goats have higher digestibility rates, particularly for crude fiber. This is attributed to longer retention time of feed in the rumen, higher VFA production, and a greater population of fiber-digesting microbes. They also produce more saliva than sheep (goats: 848 mL/day, sheep: 502 mL/day).
+
+According to Sharma and Rajora (1977), the digestibility of dry matter and crude fiber ranks as follows:
+
+**Goats > Sheep > Buffalo > Cattle**, indicating goats have superior roughage digestion compared to other ruminants.

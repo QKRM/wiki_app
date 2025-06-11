@@ -1,99 +1,51 @@
-## Chapter 2: Nutritional and Pregnancy Management
+## Nutritional and Pregnancy Management
 
 ### Feeding Guidelines for Growing and Breeding Cattle
 
-The key to rearing replacement heifers is to provide unlimited high-quality roughage (ad libitum). During the pre-pubertal stage, a daily weight gain of about 500–600g should be maintained to allow sexual maturity around 12–15 months of age.
+The key to managing growing heifers is to provide unlimited high-quality roughage (ad libitum). Before the pubertal period, daily weight gain should be maintained at 500–600g so that sexual maturity can be achieved by 12–15 months of age.
 
-When purchasing breeding cows externally, priority should be given to selecting animals with healthy and smooth body condition rather than focusing solely on price.
+If purchasing breeding cows from outside, it is advisable to choose animals with healthy and smooth appearance rather than focusing on price. The feeding principle for growing heifers is to freely offer high-quality roughage and supplement only with concentrate to cover nutritional gaps. Sufficient roughage intake maximizes development of the rumen (1st and 2nd stomachs) and promotes the growth of the post-ruminal digestive system. 
 
-**Feeding principles:**
-- Provide abundant quality roughage.
-- Use concentrate feed only to supplement nutritional deficiencies.
-- Roughage promotes the development of the rumen (1st and 2nd stomachs) and post-rumen digestion.
+Insufficient roughage feeding may lead to digestive system or liver disorders and can shorten the productive lifespan of breeding cows. During this period, it is also beneficial to ensure sufficient intake of trace minerals and vitamins. While commercial supplements are available, adequate feeding of fresh forage, silage, and a small amount of concentrate feed usually provides sufficient nutrients.
 
-Lack of roughage may lead to digestive or liver issues, shortening reproductive lifespan. Supplementation of trace minerals and vitamins is also recommended during this stage. Often, these nutrients can be sufficiently provided through a mix of silage or fresh forage and a small amount of concentrate.
-
-**Weight gain goals:**
+The target weight gain for heifers varies depending on their maturity stage:
 - Before sexual maturity: ~600g/day
-- After sexual maturity to calving: ~400g/day
+- From sexual maturity to calving: ~400g/day
 
-Example roughages: mountain grass, rice straw, green feed, silage.
-
-Failure to meet proper nutritional standards (20% or more below recommended) may delay sexual maturity by 2–3 months, increasing days open and reducing efficiency.
+Roughages suitable for feeding include mountain grass, rice straw, green forage, and silage. The impact of nutrition level on growth and reproduction is significant. If undernutrition is about 20% below the standard, sexual maturity can be delayed by 2–3 months, increasing the open period, which is economically disadvantageous.
 
 ---
 
 ### Management of Pregnant Cows
 
-From the beginning of pregnancy to about the 6th month, there’s little need to alter standard feeding practices. However, during early pregnancy (first 3–4 months), avoid excessive stress to prevent miscarriage.
+From the beginning of pregnancy until about the 6th month, there is no need for special management, and the same feeding pattern used during the non-pregnant period can be maintained. However, during the early stages of pregnancy (3–4 months), cows should be protected from sudden shocks to prevent miscarriage.
 
-The most important period is the **last 2–3 months before calving**, during which:
-- Fetal growth accelerates, accounting for ~70% of total weight gain.
-- Nutrient requirements increase significantly.
-- Increase total digestible nutrients (TDN) and crude protein intake by 20–30%.
+The most important period in managing pregnant cows is the last 2–3 months before delivery, when fetal growth becomes rapid, accounting for about 70% of the total fetal development. During this period, nutrient redistribution alone is not sufficient for fetal growth, and therefore, the amount of digestible nutrients and crude protein provided should be increased by 20–30%.
+
+Generally, farmers feed an additional 1kg of concentrate feed during this period to meet the increased requirements. For first-calf heifers, increasing concentrate feeding until calving helps improve milk production through udder development. This method is known as "steaming-up."
+
+Additionally, feeding feed rich in beta-carotene 2 weeks before calving helps with early postpartum uterine recovery and promotes estrus, shortening the breeding interval. Beta-carotene is abundant in leafy plants, hay, and yellow corn.
+
+It is also advisable to administer fat-soluble vitamin preparations or selenium injections 2 weeks before calving to prevent calf white muscle disease, retained placenta, and stillbirths. Commercial products containing vitamin E and selenium (e.g., from Schering) may be used. Vaccinations should be given 4 and 2 weeks before calving to prevent virus infections in calves.
+
+---
+
+### Management of Cows at Calving
+
+After calving, it is important to immediately check whether the cow can nurse the calf. If the cow is a heifer with underdeveloped udders or refuses to nurse, force-feeding with thawed frozen colostrum obtained in advance from nearby dairy farms is necessary. Artificial feeding should then continue.
+
+If a cow refuses to nurse, forced correction should be applied for 1–3 days to encourage nursing. If this fails, artificial feeding is the best option.
+
+The nutritional intake of lactating cows should remain the same as immediately before calving to aid uterine recovery and meet lactation energy demands.
+
+**General postpartum management includes:**
+- Maintaining proper nutrition levels
+- Providing exercise and sunlight to promote vitamin D synthesis
+- Improving blood circulation and uterine recovery
+- Promoting estrus return
+
+Since lactation can delay the return of estrus, early weaning of calves is advisable. Once calves consume about 500g of milk replacer, weaning is possible.
 
 For example:
-- If concentrate feed was 2–3 kg/day, increase it by 1 kg/day during this time.
-
-**Steaming-up feeding** is recommended for first-calving heifers to promote udder development.
-
-Additional practices:
-- Provide β-carotene-rich feed (leafy greens, hay, yellow corn) 2 weeks before calving to assist uterine recovery and promote estrus.
-- Inject vitamin E and selenium to prevent white muscle disease in calves and retained placenta in cows.
-- Administer two prepartum vaccinations (4 and 2 weeks before delivery) to provide passive immunity to the calf.
-
----
-
-### Calving Cow Management
-
-Immediately after calving, check whether the cow is willing and able to nurse. If not:
-- Use frozen colostrum sourced from a nearby dairy farm.
-- Implement forced or artificial feeding if necessary.
-
-For cows refusing to nurse:
-- Provide assistance for 1–3 days to promote natural nursing.
-- Switch to bottle or bucket feeding if the calf continues to be rejected.
-
-Keep the cow’s nutrient intake at the same level as just before calving:
-- Ensures uterine recovery and supports lactation.
-
-**General postpartum care:**
-- Maintain optimal nutrition.
-- Encourage daily movement and sunlight exposure to aid vitamin D synthesis and blood circulation.
-- This helps promote estrus return and improves uterine recovery.
-
-**Early weaning** is recommended to avoid delays in estrus return:
-- Calves consuming at least 500g of milk replacer can be weaned at any time.
-- For example, weaning at day 40 can reduce estrus return interval to ~23 days.
-
----
-
-### Visual Aid: Risk Factors for Abnormal Udder Health
-
-### Udder Health Risk Factors
-
-The following diagram illustrates the interrelated factors affecting udder health in breeding cows:
-
-```plaintext
-      [Genetic Traits]
-             ↓
-       [Milking Stage]
-             ↓
-       [Milking Hygiene]
-             ↑
-  [Unhealthy Udder Condition]
-             ↑
-         [Feed]
-             ↑
-  [Temperature · Humidity · General Management in Barn]
-
-
-**Diagram Translation:**
-
-- Top left: Genetic Traits
-- Top right: Milking Stage
-- Bottom left: Barn temperature, humidity, general management
-- Bottom right: Milking hygiene
-- Center: Feed → Poor udder condition ↔ Mastitis risk
-
-All of these factors contribute to unhealthy udders and elevated risk of mastitis.
+- Calves weaned at day 40: estrus returns ~22.8 days later
+- Calves weaned at day 60: estrus returns ~26.8 days later
