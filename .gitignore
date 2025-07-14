@@ -13,3 +13,4 @@
 .externalNativeBuild
 .cxx
 local.properties
+translate_wiki_content.py
