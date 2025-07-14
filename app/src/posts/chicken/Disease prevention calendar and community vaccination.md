@@ -22,15 +22,40 @@ _do not vaccinate sick birds_
 ## Vaccination methods
 
 There are four fundamental ways of vaccinating birds:
-|Methods|detail|
-|---|---|
-|Eye drops|Most vaccines in Uganda are administered by this route.Sometimes by nose or mouth drops. Examples of vaccines given as eye drops include Newcastle disease, Gumboro disease and infectious bronchitis|
-|Injections|The vaccines of chicken given by injections into the muscle of the neck, breast or the thigh include Marek’s disease vaccine and Fowl typhoid vaccine. But these are more in exotic birds kept in intensive system.|
-|Skin piercing|In this category, we have only fowl pox vaccine for local poultry in Uganda. It is injected in the skin of wing web using a forked needle|
-|Orally(in feed or water)|Any of those that are administered by eye drop can be administered in water. This method is used for confined systems. For scavenging poultry, you should avoid mixing vaccines with drinking water or feed, as it is difficult to give the right dose. Research have shown that protection against e.g., Newcastle Disease is highly variable if vaccine is given through water or feed. Giving the right dose is essential for the vaccine to work properly.|
-
-|![s11032603262025](https://a.okmd.dev/md/67e36070c075f.png)<br>_Vaccination by eye drop_|![s11043203262025](https://a.okmd.dev/md/67e360b28f086.png)<br>_store vaccines in a cool box during vaccination campaigns_|
-|---|---|
+<table>
+    <tr>
+        <td>Methods</td>
+        <td>detail</td>
+    </tr>
+    <tr>
+        <td>Eye drops</td>
+        <td>Most vaccines in Uganda are administered by this route.Sometimes by nose or mouth drops. Examples of vaccines given as eye drops include Newcastle disease, Gumboro disease and infectious bronchitis</td>
+    </tr>
+    <tr>
+        <td>Injections</td>
+        <td>The vaccines of chicken given by injections into the muscle of the neck, breast or the thigh include Marek’s disease vaccine and Fowl typhoid vaccine. But these are more in exotic birds kept in intensive system.</td>
+    </tr>
+    <tr>
+        <td>Skin piercing</td>
+        <td>In this category, we have only fowl pox vaccine for local poultry in Uganda. It is injected in the skin of wing web using a forked needle</td>
+    </tr>
+    <tr>
+        <td>Orally(in feed or water)</td>
+        <td>Any of those that are administered by eye drop can be administered in water. This method is used for confined systems. For scavenging poultry, you should avoid mixing vaccines with drinking water or feed, as it is difficult to give the right dose. Research have shown that protection against e.g., Newcastle Disease is highly variable if vaccine is given through water or feed. Giving the right dose is essential for the vaccine to work properly.</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>![s11032603262025](https://a.okmd.dev/md/67e36070c075f.png)&lt;br&gt;_Vaccination by eye drop_</td>
+        <td>![s11043203262025](https://a.okmd.dev/md/67e360b28f086.png)&lt;br&gt;_store vaccines in a cool box during vaccination campaigns_</td>
+    </tr>
+    <tr>
+        <td>---</td>
+        <td>---</td>
+    </tr>
+</table>
 
 * A too high dose of a live vaccine may kill a young chick, whereas a too low dose will not give adequate protection. Thus, it is important to consult a veterinarian for further advice before carrying out a vaccination.
 * Most vaccines must be kept in the refrigerator between 4 and 8°C and never frozen.
@@ -42,16 +67,71 @@ There are four fundamental ways of vaccinating birds:
 
 The table below give an indication on which vaccination program is recommended for local chicken in Uganda. It is recommended to plan the exact timing of vaccination in a collaborative way with the local population, depending on the outbreak of the main disease, for example by producing a disease prevention calendar.
 
-|Age(weeks)|Type of Vaccine|Route of administration|Dose|Comments|
-|:---:|---|---|---|---|
-|7 days|Newcastle + Infectiousbronchitis|Eye drop|One drop per eye|Very important|
-|14 days|Gumboro|Eye drop|One drop per eye|Optional|
-|21 days|Newcastle + IB|Eye drop|One drop per eye|Optional|
-|28 days|Gumboro|Eye drop|One drop per eye|Optional|
-|6th week|Fowl pox|Wing web skin piercing|Scoop of vaccine in needle eye, one wing pierced once|Very important|
-|8th week|Newcastle|Eye drop|One drop per eye|Optional|
-|5th month|Newcastle + IB|Eye drop|One drop per eye|Very important|
-|Every after 3 months|Newcastle|Eye drop|One drop per eye|Very important|
+<table>
+    <tr>
+        <td>Age(weeks)</td>
+        <td>Type of Vaccine</td>
+        <td>Route of administration</td>
+        <td>Dose</td>
+        <td>Comments</td>
+    </tr>
+    <tr>
+        <td>7 days</td>
+        <td>Newcastle + Infectiousbronchitis</td>
+        <td>Eye drop</td>
+        <td>One drop per eye</td>
+        <td>Very important</td>
+    </tr>
+    <tr>
+        <td>14 days</td>
+        <td>Gumboro</td>
+        <td>Eye drop</td>
+        <td>One drop per eye</td>
+        <td>Optional</td>
+    </tr>
+    <tr>
+        <td>21 days</td>
+        <td>Newcastle + IB</td>
+        <td>Eye drop</td>
+        <td>One drop per eye</td>
+        <td>Optional</td>
+    </tr>
+    <tr>
+        <td>28 days</td>
+        <td>Gumboro</td>
+        <td>Eye drop</td>
+        <td>One drop per eye</td>
+        <td>Optional</td>
+    </tr>
+    <tr>
+        <td>6th week</td>
+        <td>Fowl pox</td>
+        <td>Wing web skin piercing</td>
+        <td>Scoop of vaccine in needle eye, one wing pierced once</td>
+        <td>Very important</td>
+    </tr>
+    <tr>
+        <td>8th week</td>
+        <td>Newcastle</td>
+        <td>Eye drop</td>
+        <td>One drop per eye</td>
+        <td>Optional</td>
+    </tr>
+    <tr>
+        <td>5th month</td>
+        <td>Newcastle + IB</td>
+        <td>Eye drop</td>
+        <td>One drop per eye</td>
+        <td>Very important</td>
+    </tr>
+    <tr>
+        <td>Every after 3 months</td>
+        <td>Newcastle</td>
+        <td>Eye drop</td>
+        <td>One drop per eye</td>
+        <td>Very important</td>
+    </tr>
+</table>
 
 ## How to administrate vaccine by eye drop (example against Newcastle disease)
 

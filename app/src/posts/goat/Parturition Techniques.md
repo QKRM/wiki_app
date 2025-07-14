@@ -54,13 +54,45 @@ Goats are more likely to give birth to **two or more kids** rather than just one
 
 ## Table: Type of Births, Number of Does, Average Kids per Birth, and Pre-Weaning Mortality Rate
 
-| Type of Birth | Number of Does (%) | Number of Kids (Average) | Pre-Weaning Mortality Rate (%) |
-|---------------|---------------------|----------------------------|-------------------------------|
-| Single Birth  | 245 (40.6%)         | 258                        | 28                            |
-| Twin Birth    | 320 (50.4%)         | 640                        | 21                            |
-| Triplet Birth | 51 (8.0%)           | 153                        | 16                            |
-| Quad Birth    | 6 (1.0%)            | 24                         | 46                            |
-| **Total**     | **635 (100%)**      | **1,075 (1.69)**           | **23**                        |
+<table>
+    <tr>
+        <td>Type of Birth</td>
+        <td>Number of Does (%)</td>
+        <td>Number of Kids (Average)</td>
+        <td>Pre-Weaning Mortality Rate (%)</td>
+    </tr>
+    <tr>
+        <td>Single Birth</td>
+        <td>245 (40.6%)</td>
+        <td>258</td>
+        <td>28</td>
+    </tr>
+    <tr>
+        <td>Twin Birth</td>
+        <td>320 (50.4%)</td>
+        <td>640</td>
+        <td>21</td>
+    </tr>
+    <tr>
+        <td>Triplet Birth</td>
+        <td>51 (8.0%)</td>
+        <td>153</td>
+        <td>16</td>
+    </tr>
+    <tr>
+        <td>Quad Birth</td>
+        <td>6 (1.0%)</td>
+        <td>24</td>
+        <td>46</td>
+    </tr>
+    <tr>
+        <td>**Total**</td>
+        <td>**635 (100%)**</td>
+        <td>**1,075 (1.69)**</td>
+        <td>**23**</td>
+    </tr>
+</table>
+
 
 ## □ Number of Kids per Birth and Pre-Weaning Mortality Rate
 

@@ -10,12 +10,13 @@
                 line-height: 1.6;
                 padding: 16px;
             }
+            .table-responsive {
+                overflow-x: auto;
+            }
             table {
                 width: 100%;
                 border-collapse: collapse;
                 margin: 16px 0;
-                overflow-x: auto;
-                display: block;
             }
             th, td {
                 border: 1px solid #ddd;
@@ -125,7 +126,7 @@
 <p>The <strong>main reason crops don’t grow well</strong> is due to <strong>nutrient deficiency</strong>.</p>
 </li>
 </ul>
-<table>
+<div class="table-responsive"><table>
 <thead>
 <tr>
 <th>Nutrient Type</th>
@@ -146,7 +147,7 @@
 <td>~1</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <ul>
 <li>In situations where <strong>chemical fertilizers are unavailable</strong>, homemade <strong>compound fertilizer</strong> is ideal for home gardens.</li>
 </ul>

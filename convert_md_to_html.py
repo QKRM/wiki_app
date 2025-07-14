@@ -42,14 +42,17 @@ def process_images(html_content, output_dir):
     img_pattern = r'<img[^>]+src="([^"]+)"'
     
     def replace_img(match):
+        full_tag = match.group(0)
         img_url = match.group(1)
+
         if img_url.startswith('http'):
             # 이미지 다운로드
             filename = download_image(img_url, output_dir)
             if filename:
                 # 상대 경로로 변경
-                return f'src="images/{filename}"'
-        return match.group(0)
+                new_tag = full_tag.replace(img_url, f'images/{filename}')
+                return new_tag
+        return full_tag
     
     # 이미지 태그 처리
     processed_html = re.sub(img_pattern, replace_img, html_content)
@@ -120,6 +123,10 @@ def process_directory(input_dir, output_dir):
     
     # 입력 디렉토리의 모든 마크다운 파일 처리
     for root, dirs, files in os.walk(input_dir):
+        # 'images' 디렉토리는 건너뛰기
+        if 'images' in dirs:
+            dirs.remove('images')
+            
         for file in files:
             if file.endswith('.md'):
                 # 입력 파일 경로
@@ -149,15 +156,19 @@ def process_directory(input_dir, output_dir):
                 print(f'변환 완료: {input_path} -> {output_path}')
 
 def main():
-    # 입력 및 출력 디렉토리 설정
-    input_dir = 'app/src/main/assets/posts/cow'
-    output_dir = 'app/src/main/assets/posts/cow'
+    # 기본 입력 디렉토리 설정
+    base_dir = 'app/src/main/posts'
     
-    # 출력 디렉토리가 없으면 생성
-    os.makedirs(output_dir, exist_ok=True)
-    
-    # 디렉토리 처리
-    process_directory(input_dir, output_dir)
+    # app/src/main/posts 디렉토리의 모든 하위 디렉토리 순회
+    for category in os.listdir(base_dir):
+        input_dir = os.path.join(base_dir, category)
+        
+        if os.path.isdir(input_dir):
+            # 출력 디렉토리를 입력 디렉토리와 동일하게 설정
+            output_dir = input_dir
+            
+            # 디렉토리 처리
+            process_directory(input_dir, output_dir)
 
 if __name__ == '__main__':
-    main() 
+    main()

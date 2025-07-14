@@ -1,3 +1,0 @@
-Poison and Toxins
-* These include drugs (overuse of drugs), disinfectants, chemicals (feed additives, salt), fumigants, fungal toxins, insecticides, and rodenticides.
-* Avoid circumstances that can lead to the ingestion of the poisons.

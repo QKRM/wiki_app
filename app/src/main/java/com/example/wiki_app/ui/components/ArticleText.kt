@@ -1,25 +1,17 @@
 package com.example.wiki_app.ui.components
 
-import android.text.Html
-import android.text.Spanned
-import android.text.method.LinkMovementMethod
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.webkit.WebSettings
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
-import androidx.core.text.HtmlCompat
 
 @Composable
 fun ArticleText(
     content: String,
+    baseUrl: String, // baseUrl을 파라미터로 받도록 수정
     modifier: Modifier = Modifier
 ) {
     AndroidView(
@@ -44,26 +36,13 @@ fun ArticleText(
             }
         },
         update = { webView: WebView ->
-            val fixedContent = content
-                .replace(
-                    Regex("""<p>src="([^"]+)"[^>]*/></p>"""),
-                    "<p><img src=\"$1\" /></p>"
-                )
-                .replace(
-                    Regex("""(?<!<img )src=\"([^\"]+)\"\s*/?>"""),
-                    "<img src=\"$1\" />"
-                )
-                .replace(
-                    Regex("src=\"images/"),
-                    "src=\"posts/images/"
-                )
-            
+            // HTML 파일에 이미 <base> 태그가 있을 수 있으므로, 동적으로 base URL을 설정하는 것이 더 안전합니다.
+            // 정규식으로 src 속성을 수정하는 대신, loadDataWithBaseURL을 올바르게 사용합니다.
             val htmlContent = """
                 <!DOCTYPE html>
                 <html>
                 <head>
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <base href="file:///android_asset/">
                     <style>
                         :root {
                             --primary-color: #2E7D32;
@@ -186,11 +165,13 @@ fun ArticleText(
                     </style>
                 </head>
                 <body>
-                    $fixedContent
+                    $content
                 </body>
                 </html>
             """.trimIndent()
-            webView.loadDataWithBaseURL("file:///android_asset/posts/", htmlContent, "text/html", "UTF-8", null)
+            // loadDataWithBaseURL의 첫 번째 인자인 baseUrl을 올바르게 설정합니다.
+            // 이 baseUrl은 HTML 파일의 위치를 기준으로 상대 경로를 해석하는 기준점이 됩니다.
+            webView.loadDataWithBaseURL(baseUrl, htmlContent, "text/html", "UTF-8", null)
         }
     )
-} 
+}
