@@ -25,6 +25,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -49,6 +50,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun WikiApp() {
     val navController = rememberNavController()
+    val wikiViewModel: WikiViewModel = viewModel()
     
     NavHost(navController = navController, startDestination = "categoryList") {
         composable("categoryList") {
@@ -56,12 +58,12 @@ fun WikiApp() {
         }
         composable("categoryPage/{category}") { backStackEntry ->
             val category = backStackEntry.arguments?.getString("category") ?: ""
-            CategoryPageScreen(navController, category)
+            CategoryPageScreen(navController, category, wikiViewModel)
         }
         composable("postPage/{category}/{fileName}") { backStackEntry ->
             val category = backStackEntry.arguments?.getString("category") ?: ""
             val fileName = backStackEntry.arguments?.getString("fileName") ?: ""
-            PostPageScreen(navController, category, fileName)
+            PostPageScreen(navController, category, fileName, wikiViewModel)
         }
     }
 }
@@ -208,8 +210,12 @@ fun CategoryCard(category: String, navController: NavController) {
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun CategoryPageScreen(navController: NavController, category: String) {
-    val posts = FileUtils.getCategoryPosts(LocalContext.current, category)
+fun CategoryPageScreen(navController: NavController, category: String, viewModel: WikiViewModel) {
+    val context = LocalContext.current
+    LaunchedEffect(category) {
+        viewModel.loadCategoryPosts(context, category)
+    }
+    val posts by viewModel.posts.collectAsState()
     var searchQuery by remember { mutableStateOf("") }
     var filteredPosts by remember { mutableStateOf(posts) }
     
@@ -219,15 +225,8 @@ fun CategoryPageScreen(navController: NavController, category: String) {
             posts
         } else {
             posts.filter { post ->
-                // HTML 태그와 CSS 속성값들을 제거
-                val cleanContent = post.content
-                    .replace(Regex("<style[^>]*>.*?</style>", RegexOption.DOT_MATCHES_ALL), "") // style 태그 제거
-                    .replace(Regex("<[^>]*>"), "") // 나머지 HTML 태그 제거
-                    .replace(Regex("\\s+"), " ") // 연속된 공백을 하나로
-                    .trim()
-                
                 post.title.contains(searchQuery, ignoreCase = true) ||
-                cleanContent.contains(searchQuery, ignoreCase = true)
+                post.plainContent.contains(searchQuery, ignoreCase = true)
             }
         }
     }
@@ -349,8 +348,12 @@ fun PostCard(
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun PostPageScreen(navController: NavController, category: String, fileName: String) {
-    val content = FileUtils.getPostContent(LocalContext.current, category, fileName)
+fun PostPageScreen(navController: NavController, category: String, fileName: String, viewModel: WikiViewModel) {
+    val context = LocalContext.current
+    LaunchedEffect(category, fileName) {
+        viewModel.loadPostContent(context, category, fileName)
+    }
+    val content by viewModel.postContent.collectAsState()
     
     Scaffold(
         topBar = {
@@ -378,6 +381,3 @@ fun PostPageScreen(navController: NavController, category: String, fileName: Str
     }
 }
 
-private val LocalNavController = staticCompositionLocalOf<NavController> { 
-    error("CompositionLocal LocalNavController not present") 
-}

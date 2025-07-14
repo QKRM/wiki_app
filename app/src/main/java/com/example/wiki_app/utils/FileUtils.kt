@@ -21,9 +21,15 @@ object FileUtils {
             files.filter { it.endsWith(".html") }
                 .map { fileName ->
                     val content = getPostContent(context, category, fileName)
+                    val plainContent = content
+                        .replace(Regex("<style[^>]*>.*?</style>", RegexOption.DOT_MATCHES_ALL), "") // style 태그 제거
+                        .replace(Regex("<[^>]*>"), "") // 나머지 HTML 태그 제거
+                        .replace(Regex("\\s+"), " ") // 연속된 공백을 하나로
+                        .trim()
                     Post(
                         title = fileName.replace(".html", ""),
                         content = content,
+                        plainContent = plainContent,
                         path = "posts/$selectedCountry/$category/$fileName"
                     )
                 }
