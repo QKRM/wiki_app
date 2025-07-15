@@ -354,6 +354,8 @@ fun PostPageScreen(navController: NavController, category: String, fileName: Str
         viewModel.loadPostContent(context, category, fileName)
     }
     val content by viewModel.postContent.collectAsState()
+    val country = FileUtils.getSelectedCountry(context)
+    val baseUrl = "file:///android_asset/posts/$country/$category/"
     
     Scaffold(
         topBar = {
@@ -374,6 +376,7 @@ fun PostPageScreen(navController: NavController, category: String, fileName: Str
     ) { paddingValues ->
         ArticleText(
             content = content,
+            baseUrl = baseUrl, // baseUrl 전달
             modifier = Modifier
                 .fillMaxSize()
                 .padding(paddingValues)

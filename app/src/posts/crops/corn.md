@@ -23,9 +23,26 @@ Corn Planting Guide
 * Converted metric units to imperial equivalents in parentheses.
 * Added context (e.g., seed certification, tools) for practicality.
 
-|N|P|K|Urea|Potassium chloride|water-soluble phosphorus|Manure|
-|---|---|---|---|---|---|---|
-|9|3|7|15|12|15|1500~2000|
+<table>
+    <tr>
+        <td>N</td>
+        <td>P</td>
+        <td>K</td>
+        <td>Urea</td>
+        <td>Potassium chloride</td>
+        <td>water-soluble phosphorus</td>
+        <td>Manure</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>3</td>
+        <td>7</td>
+        <td>15</td>
+        <td>12</td>
+        <td>15</td>
+        <td>1500~2000</td>
+    </tr>
+</table>
 
 _Compund fertilizer application 1kg/10a_
 
@@ -55,10 +72,20 @@ The optimal temperature for corn germination is 32–34°C (minimum: 8–11°C, 
 
 ## Management by Condition
 
-|Condition|Details|
-|---|---|
-|Drought|● During early growth, hill soil deeply to break shallow roots near the surface and promote deep root growth.<br>● Irrigate between furrows to allow moisture to penetrate the ridges.|
-|Excess Moisture|● Improve drainage in compacted or poorly drained areas using deep plowing or subsurface drainage.<br>● Plant on raised beds.<br>● Use organic matter and soil conditioners to improve soil structure and water permeability.<br>● Apply potassium and micronutrients as foliar sprays: 2% potassium solution.|
+<table>
+    <tr>
+        <td>Condition</td>
+        <td>Details</td>
+    </tr>
+    <tr>
+        <td>Drought</td>
+        <td>● During early growth, hill soil deeply to break shallow roots near the surface and promote deep root growth.&lt;br&gt;● Irrigate between furrows to allow moisture to penetrate the ridges.</td>
+    </tr>
+    <tr>
+        <td>Excess Moisture</td>
+        <td>● Improve drainage in compacted or poorly drained areas using deep plowing or subsurface drainage.&lt;br&gt;● Plant on raised beds.&lt;br&gt;● Use organic matter and soil conditioners to improve soil structure and water permeability.&lt;br&gt;● Apply potassium and micronutrients as foliar sprays: 2% potassium solution.</td>
+    </tr>
+</table>
 
 Corn is a vigorously growing crop that absorbs and utilizes large amounts of nutrients. Since the nutrients naturally present in the soil are not sufficient, an appropriate amount of fertilizer must be applied. Organic compost and phosphate fertilizers should be applied as base fertilizers, while nitrogen and potassium fertilizers should be split, with half applied as topdressing. Topdressing is applied by digging between the plants at intervals of 20 to 25 days after planting.
 

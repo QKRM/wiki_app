@@ -26,16 +26,53 @@ A goat’s health can be assessed through **careful daily observation** of vario
 
 ## □ Goat Health Observation Checklist
 
-| Observation Category | Description | Notes |
-|----------------------|-------------|-------|
-| **Mobility**         | Movement reaction, limping, stiffness | Observe constantly |
-| **Appetite**         | Normal intake, palatability, chewing, feeding behavior | Based on daily intake standards |
-| **Hair (Skin), Hooves** | Gloss, hair loss, injuries | Check weekly |
-| **Eyes, Nose**       | Discharge, tearing, nasal mucus | Look for inflammation and color changes |
-| **Body Temperature** | Normal, fever | Normal range: **38.5–39.5°C** |
-| **Feces/Urine**      | Color, frequency, consistency | Note any unusual odor |
-| **Body Weight**      | Below or above standard | Based on age-specific standards |
-| **Environment**      | Temperature, humidity | Optimal: **10–18°C**, max **27°C**; Humidity: **60–80%** |
+<table>
+    <tr>
+        <td>Observation Category</td>
+        <td>Description</td>
+        <td>Notes</td>
+    </tr>
+    <tr>
+        <td>**Mobility**</td>
+        <td>Movement reaction, limping, stiffness</td>
+        <td>Observe constantly</td>
+    </tr>
+    <tr>
+        <td>**Appetite**</td>
+        <td>Normal intake, palatability, chewing, feeding behavior</td>
+        <td>Based on daily intake standards</td>
+    </tr>
+    <tr>
+        <td>**Hair (Skin), Hooves**</td>
+        <td>Gloss, hair loss, injuries</td>
+        <td>Check weekly</td>
+    </tr>
+    <tr>
+        <td>**Eyes, Nose**</td>
+        <td>Discharge, tearing, nasal mucus</td>
+        <td>Look for inflammation and color changes</td>
+    </tr>
+    <tr>
+        <td>**Body Temperature**</td>
+        <td>Normal, fever</td>
+        <td>Normal range: **38.5–39.5°C**</td>
+    </tr>
+    <tr>
+        <td>**Feces/Urine**</td>
+        <td>Color, frequency, consistency</td>
+        <td>Note any unusual odor</td>
+    </tr>
+    <tr>
+        <td>**Body Weight**</td>
+        <td>Below or above standard</td>
+        <td>Based on age-specific standards</td>
+    </tr>
+    <tr>
+        <td>**Environment**</td>
+        <td>Temperature, humidity</td>
+        <td>Optimal: **10–18°C**, max **27°C**; Humidity: **60–80%**</td>
+    </tr>
+</table>
 
 # 2. Disease Prevention and Common Goat Diseases
 

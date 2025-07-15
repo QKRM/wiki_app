@@ -109,15 +109,48 @@ heat stress.
 * If the birds are scavenging, we supplement their diet with about 30-40 g of feed/bird/day from week 4-6 and onwards.
 * If adult birds are not scavenging, give them a feed supplement of at least 70g (seven tablespoonful) per bird per day
 
-|Age,Weeks|Amount given to each bird per day(g dry weight)| Amount eaten per day per bird (d dry weight), incl. scavenging|
-|---|---|---|
-|1 week|10-15 grams|12-15 grams|
-|2 weeks |5-20 grams |15-20 grams|
-|3 weeks |21-30 grams| 21-35 grams|
-|4-6 weeks| 30-40 grams| 35-50 grams|
-|8 weeks |30-40 grams|55-60 grams|
-|16-27 weeks,growers| 30-50 grams |65-80 grams|
-|28 weeks,adults|30-50 grams|100 grams|
+<table>
+    <tr>
+        <td>Age,Weeks</td>
+        <td>Amount given to each bird per day(g dry weight)</td>
+        <td>Amount eaten per day per bird (d dry weight), incl. scavenging</td>
+    </tr>
+    <tr>
+        <td>1 week</td>
+        <td>10-15 grams</td>
+        <td>12-15 grams</td>
+    </tr>
+    <tr>
+        <td>2 weeks</td>
+        <td>5-20 grams</td>
+        <td>15-20 grams</td>
+    </tr>
+    <tr>
+        <td>3 weeks</td>
+        <td>21-30 grams</td>
+        <td>21-35 grams</td>
+    </tr>
+    <tr>
+        <td>4-6 weeks</td>
+        <td>30-40 grams</td>
+        <td>35-50 grams</td>
+    </tr>
+    <tr>
+        <td>8 weeks</td>
+        <td>30-40 grams</td>
+        <td>55-60 grams</td>
+    </tr>
+    <tr>
+        <td>16-27 weeks,growers</td>
+        <td>30-50 grams</td>
+        <td>65-80 grams</td>
+    </tr>
+    <tr>
+        <td>28 weeks,adults</td>
+        <td>30-50 grams</td>
+        <td>100 grams</td>
+    </tr>
+</table>
 
 Explanation of the table: Chicks should be fed throughout the day at a rate of 12g per chick per day in week one, then 20g in week two, increasing by at least 5g per week until 50g per bird per day. This is for chicks in artificial brooding, the recommended method in programmed hatching. The chicks are released out at 2 months of age and then supplemented like adult birds.
 
@@ -144,17 +177,48 @@ Minerals =0.5/3.5 x10=1.4kg=1kg
 
 Therefore, all your energy sources like maize, maize bran, millet should equal to 6kg. Also, protein sources like fish, soybean, beans, and others should equal to 3kg. Likewise, minerals and vitamin premixes should add up to 1 kg. We can, therefore, have a simple diet as in Table below.
 ```
-|Ingredient|Amount(kg)|
-|---|---|
-|Maize|2|
-|Maize bran|3|
-|Millet/brewer's waste|1|
-|Fish|2|
-|Soybean/beans|1|
-|Shells(or lime)|0.5|
-|Salt|0.25|
-|Premix|0.25|
-|Total|10|
+<table>
+    <tr>
+        <td>Ingredient</td>
+        <td>Amount(kg)</td>
+    </tr>
+    <tr>
+        <td>Maize</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>Maize bran</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>Millet/brewer&#39;s waste</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>Fish</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>Soybean/beans</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>Shells(or lime)</td>
+        <td>0.5</td>
+    </tr>
+    <tr>
+        <td>Salt</td>
+        <td>0.25</td>
+    </tr>
+    <tr>
+        <td>Premix</td>
+        <td>0.25</td>
+    </tr>
+    <tr>
+        <td>Total</td>
+        <td>10</td>
+    </tr>
+</table>
 
 * Once the formula is generated as in the example in box 1 above, you then mix the feed by first mixing the small items before including them gradually into the bulk feed. This will ensure a uniform mix of the ingredients.
 * Locally available containers such as tomato tins or matchboxes may be used for easy measurement of the different ingredients (Figure 33). Grams or percentages should be transferred into local quantities for field practice.

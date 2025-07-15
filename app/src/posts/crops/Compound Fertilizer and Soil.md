@@ -56,11 +56,24 @@
 
 - The **main reason crops don’t grow well** is due to **nutrient deficiency**.
 
-  | Nutrient Type     | Relative Amount Needed |
-  |-------------------|------------------------|
-  | N, P, K           | 100                    |
-  | Mg, S             | ~10                    |
-  | Micronutrients    | ~1                     |
+<table>
+    <tr>
+        <td>Nutrient Type</td>
+        <td>Relative Amount Needed</td>
+    </tr>
+    <tr>
+        <td>N, P, K</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <td>Mg, S</td>
+        <td>~10</td>
+    </tr>
+    <tr>
+        <td>Micronutrients</td>
+        <td>~1</td>
+    </tr>
+</table>
 
 - In situations where **chemical fertilizers are unavailable**, homemade **compound fertilizer** is ideal for home gardens.
 

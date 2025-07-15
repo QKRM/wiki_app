@@ -12,6 +12,10 @@ object FileUtils {
         selectedCountry = country
     }
 
+    fun getSelectedCountry(context: Context): String {
+        return selectedCountry
+    }
+
     fun getCategoryPosts(context: Context, category: String): List<Post> {
         val posts = mutableListOf<Post>()
         try {

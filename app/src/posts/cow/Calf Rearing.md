@@ -44,15 +44,40 @@ To maintain a **minimum IgG level of 10 g/L** in **1L of plasma** for a **40 kg 
 
 #### Table 1. Estimated Colostrum Requirement for Calves
 
-| Item                                | Condition         |
-|-------------------------------------|-------------------|
-| Calf Body Weight                    | 40 kg             |
-| Estimated Plasma Volume (9% BW)     | 3.6 L             |
-| Minimum Plasma IgG Concentration    | 10 g/L            |
-| Colostrum Absorption Rate           | 35%               |
-| IgG Requirement (3.6 × 10 ÷ 0.35)   | 103 g             |
-| Colostrum IgG Concentration         | 50 g/L            |
-| Required Colostrum Volume           | 2.1 L (103 g ÷ 50 g) |
+<table>
+    <tr>
+        <td>Item</td>
+        <td>Condition</td>
+    </tr>
+    <tr>
+        <td>Calf Body Weight</td>
+        <td>40 kg</td>
+    </tr>
+    <tr>
+        <td>Estimated Plasma Volume (9% BW)</td>
+        <td>3.6 L</td>
+    </tr>
+    <tr>
+        <td>Minimum Plasma IgG Concentration</td>
+        <td>10 g/L</td>
+    </tr>
+    <tr>
+        <td>Colostrum Absorption Rate</td>
+        <td>35%</td>
+    </tr>
+    <tr>
+        <td>IgG Requirement (3.6 × 10 ÷ 0.35)</td>
+        <td>103 g</td>
+    </tr>
+    <tr>
+        <td>Colostrum IgG Concentration</td>
+        <td>50 g/L</td>
+    </tr>
+    <tr>
+        <td>Required Colostrum Volume</td>
+        <td>2.1 L (103 g ÷ 50 g)</td>
+    </tr>
+</table>
 
 
 ### Colostrum Absorption and Feeding Guidelines
@@ -90,9 +115,30 @@ If colostrum is unavailable—such as in the event of dam death—use one of the
 
 ### Table 2: Calf Rearing Guidelines by Growth Stage
 
-| No. | Growth Stage             | Management Guidelines |
-|-----|--------------------------|------------------------|
-| 1   | Birth to 60 Days (Pre-weaning) | ◉ Feed maternal milk for the first 7 days, then milk replacer diluted at 9:1 (water:replacer) in 2–2.4L amounts, twice a day. Gradually increase to 4L by day 15. <br> ◉ Maintain hygiene, sanitize barns, and ensure clean water. <br> ◉ Start grain feeding on day 3 (100g/day), increasing to 1–1.2kg/day by day 60. <br> ◉ Feed chopped hay (~5cm) starting at 100g, increasing to 300g. |
-| 2   | 2–3 Months | ◉ Transition to calf feed weekly, starting at 1.2kg/day and increasing by 40–50g based on fecal condition. <br> ◉ Feed about 350g hay. <br> ◉ Keep barn dry and well-ventilated. |
-| 3   | 4–6 Months | ◉ Switch to grower feed starting at 3kg/day, increasing 50g daily to 5.5kg by 6 months. <br> ◉ Feed 350g–1.5kg hay based on digestion. <br> ◉ Watch for bloat or diarrhea. <br> ◉ Castrate and deworm at 4–5 months. Monitor for inflammation and keep area sanitized. |
-| 4   | 7–8 Months | ◉ From 7 months, feed 6.5kg concentrate and 2.0–4.0kg hay, increasing by 40–50g per day. Maintain dry flooring and good ventilation. |
+<table>
+    <tr>
+        <td>No.</td>
+        <td>Growth Stage</td>
+        <td>Management Guidelines</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Birth to 60 Days (Pre-weaning)</td>
+        <td>◉ Feed maternal milk for the first 7 days, then milk replacer diluted at 9:1 (water:replacer) in 2–2.4L amounts, twice a day. Gradually increase to 4L by day 15. &lt;br&gt; ◉ Maintain hygiene, sanitize barns, and ensure clean water. &lt;br&gt; ◉ Start grain feeding on day 3 (100g/day), increasing to 1–1.2kg/day by day 60. &lt;br&gt; ◉ Feed chopped hay (~5cm) starting at 100g, increasing to 300g.</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>2–3 Months</td>
+        <td>◉ Transition to calf feed weekly, starting at 1.2kg/day and increasing by 40–50g based on fecal condition. &lt;br&gt; ◉ Feed about 350g hay. &lt;br&gt; ◉ Keep barn dry and well-ventilated.</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>4–6 Months</td>
+        <td>◉ Switch to grower feed starting at 3kg/day, increasing 50g daily to 5.5kg by 6 months. &lt;br&gt; ◉ Feed 350g–1.5kg hay based on digestion. &lt;br&gt; ◉ Watch for bloat or diarrhea. &lt;br&gt; ◉ Castrate and deworm at 4–5 months. Monitor for inflammation and keep area sanitized.</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>7–8 Months</td>
+        <td>◉ From 7 months, feed 6.5kg concentrate and 2.0–4.0kg hay, increasing by 40–50g per day. Maintain dry flooring and good ventilation.</td>
+    </tr>
+</table>

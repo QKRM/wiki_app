@@ -38,22 +38,68 @@
 
 ## Recommended Fertilizer Nutrient Levels for Soybeans by Soil Type
 
-|Fertilizer Type|Recommended Amount|Remarks|
-|---|---|---|
-|Nitrogen(N)|3.0|Recommended for all fertilizer types|
-|Phosphorus (P₂O₅)|3.0|"|
-|Potassium (K₂O)|3.4|"|
-|Compost|1,200|"|
+<table>
+    <tr>
+        <td>Fertilizer Type</td>
+        <td>Recommended Amount</td>
+        <td>Remarks</td>
+    </tr>
+    <tr>
+        <td>Nitrogen(N)</td>
+        <td>3.0</td>
+        <td>Recommended for all fertilizer types</td>
+    </tr>
+    <tr>
+        <td>Phosphorus (P₂O₅)</td>
+        <td>3.0</td>
+        <td>&quot;</td>
+    </tr>
+    <tr>
+        <td>Potassium (K₂O)</td>
+        <td>3.4</td>
+        <td>&quot;</td>
+    </tr>
+    <tr>
+        <td>Compost</td>
+        <td>1,200</td>
+        <td>&quot;</td>
+    </tr>
+</table>
 
 _When growing soybeans on previously cultivated land._
 
-|Fertilizer Type|Recommended Amount|Remarks|
-|---|---|---|
-|Lime|200|Compost and lime are applied in actual amounts (not based on nutrient content).|
-|Nitrogen(N)|6.0||
-|Phosphorus (P₂O₅)|8.0||
-|Potassium (K₂O)|6.0||
-|Compost|1,500||
+<table>
+    <tr>
+        <td>Fertilizer Type</td>
+        <td>Recommended Amount</td>
+        <td>Remarks</td>
+    </tr>
+    <tr>
+        <td>Lime</td>
+        <td>200</td>
+        <td>Compost and lime are applied in actual amounts (not based on nutrient content).</td>
+    </tr>
+    <tr>
+        <td>Nitrogen(N)</td>
+        <td>6.0</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Phosphorus (P₂O₅)</td>
+        <td>8.0</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Potassium (K₂O)</td>
+        <td>6.0</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Compost</td>
+        <td>1,500</td>
+        <td></td>
+    </tr>
+</table>
 
 _When growing soybeans on newly cultivated land._
 

@@ -8,35 +8,154 @@
 
 ## Feed Composition and Nutrient Profile (Example – 120 kg Body Weight)
 
-| Item                                | Example 1 | Example 2 | Example 3 |
-|-------------------------------------|-----------|-----------|-----------|
-| Alfalfa–Timothy hay (CP 17%)        | 2.0 kg    | –         | –         |
-| Alfalfa–Timothy hay (CP 14.5%)      | –         | 1.8 kg    | –         |
-| Timothy hay (CP 10%)                | –         | –         | 1.4 kg    |
-| Corn silage (or barley)             | 1.4 kg    | 1.6 kg    | 1.6 kg    |
-| Protein supplement (CP 49%)         | 0.22 kg   | 0.18 kg   | 0.22 kg   |
-| Mineral mix (Ca 22%, P 18%)         | 0.02 kg   | 0.02 kg   | 0.02 kg   |
-| Salt                                | 0.09 kg   | 0.09 kg   | 0.09 kg   |
-| Crude protein (%)                   | 16.2      | 15.4      | 15.5      |
-| Total Digestible Nutrients (TDN) % | 70.3      | 71.5      | 71.7      |
-| Calcium (Ca)                        | 0.83      | 0.79      | 0.80      |
-| Phosphorus (P)                      | 0.39      | 0.36      | 0.38      |
-| Total forage intake (kg/day)       | 3.8       | 3.6       | 3.4       |
-| Forage ratio (%)                   | 55        | 48        | 39        |
-
+<table>
+    <tr>
+        <td>Item</td>
+        <td>Example 1</td>
+        <td>Example 2</td>
+        <td>Example 3</td>
+    </tr>
+    <tr>
+        <td>Alfalfa–Timothy hay (CP 17%)</td>
+        <td>2.0 kg</td>
+        <td>–</td>
+        <td>–</td>
+    </tr>
+    <tr>
+        <td>Alfalfa–Timothy hay (CP 14.5%)</td>
+        <td>–</td>
+        <td>1.8 kg</td>
+        <td>–</td>
+    </tr>
+    <tr>
+        <td>Timothy hay (CP 10%)</td>
+        <td>–</td>
+        <td>–</td>
+        <td>1.4 kg</td>
+    </tr>
+    <tr>
+        <td>Corn silage (or barley)</td>
+        <td>1.4 kg</td>
+        <td>1.6 kg</td>
+        <td>1.6 kg</td>
+    </tr>
+    <tr>
+        <td>Protein supplement (CP 49%)</td>
+        <td>0.22 kg</td>
+        <td>0.18 kg</td>
+        <td>0.22 kg</td>
+    </tr>
+    <tr>
+        <td>Mineral mix (Ca 22%, P 18%)</td>
+        <td>0.02 kg</td>
+        <td>0.02 kg</td>
+        <td>0.02 kg</td>
+    </tr>
+    <tr>
+        <td>Salt</td>
+        <td>0.09 kg</td>
+        <td>0.09 kg</td>
+        <td>0.09 kg</td>
+    </tr>
+    <tr>
+        <td>Crude protein (%)</td>
+        <td>16.2</td>
+        <td>15.4</td>
+        <td>15.5</td>
+    </tr>
+    <tr>
+        <td>Total Digestible Nutrients (TDN) %</td>
+        <td>70.3</td>
+        <td>71.5</td>
+        <td>71.7</td>
+    </tr>
+    <tr>
+        <td>Calcium (Ca)</td>
+        <td>0.83</td>
+        <td>0.79</td>
+        <td>0.80</td>
+    </tr>
+    <tr>
+        <td>Phosphorus (P)</td>
+        <td>0.39</td>
+        <td>0.36</td>
+        <td>0.38</td>
+    </tr>
+    <tr>
+        <td>Total forage intake (kg/day)</td>
+        <td>3.8</td>
+        <td>3.6</td>
+        <td>3.4</td>
+    </tr>
+    <tr>
+        <td>Forage ratio (%)</td>
+        <td>55</td>
+        <td>48</td>
+        <td>39</td>
+    </tr>
+</table>
 ---
 
 ## Growth Phase (6–12 Months Old)
 
 From 6 to 11 months of age (around 400kg), cattle experience rapid development in bones, internal organs, and digestive system. Feeding guidelines during this stage are as follows:
 
-| Age (Months) | Daily Gain (kg) | Weight Gain (kg) | Target Weight (kg) | Concentrate (kg) | Hay (kg) | Straw (kg) |
-|--------------|------------------|------------------|---------------------|------------------|----------|------------|
-| 6–7          | 1.25             | 80               | 190–270             | 3.0              | 2.0      | 1.5        |
-| 8            | 1.00             | 30               | 270–300             | 5.5              | –        | 3.5        |
-| 9            | 1.17             | 35               | 300–335             | 6.0              | –        | 4.0        |
-| 10           | 1.17             | 30               | 335–370             | 6.5              | –        | 4.0        |
-| 11           | 1.00             | 30               | 370–400             | 7.0              | –        | 4.5        |
+<table>
+    <tr>
+        <td>Age (Months)</td>
+        <td>Daily Gain (kg)</td>
+        <td>Weight Gain (kg)</td>
+        <td>Target Weight (kg)</td>
+        <td>Concentrate (kg)</td>
+        <td>Hay (kg)</td>
+        <td>Straw (kg)</td>
+    </tr>
+    <tr>
+        <td>6–7</td>
+        <td>1.25</td>
+        <td>80</td>
+        <td>190–270</td>
+        <td>3.0</td>
+        <td>2.0</td>
+        <td>1.5</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>1.00</td>
+        <td>30</td>
+        <td>270–300</td>
+        <td>5.5</td>
+        <td>–</td>
+        <td>3.5</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>1.17</td>
+        <td>35</td>
+        <td>300–335</td>
+        <td>6.0</td>
+        <td>–</td>
+        <td>4.0</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>1.17</td>
+        <td>30</td>
+        <td>335–370</td>
+        <td>6.5</td>
+        <td>–</td>
+        <td>4.0</td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td>1.00</td>
+        <td>30</td>
+        <td>370–400</td>
+        <td>7.0</td>
+        <td>–</td>
+        <td>4.5</td>
+    </tr>
+</table>
 
 - Recommended roughage includes hay cubes (0.7–1.2 kg) and rice straw (0.6–1.4 kg).
 - Grain mix (CP 11%, TDN 74%) should be fed as flake-type concentrate in limited amounts (6–8 kg).
@@ -47,11 +166,44 @@ From 6 to 11 months of age (around 400kg), cattle experience rapid development i
 
 ## Slaughter Timing Decision
 
-| Slaughter Age | Initial Weight (kg) | Final Weight (kg) | Avg. Weight (kg) | Daily Gain (kg) | Dry Matter Intake (kg/day) | Feed per kg Gain (kg) |
-|---------------|----------------------|--------------------|-------------------|------------------|-----------------------------|-------------------------|
-| 18 months     | 160.7 ±10.3          | 702.9 ±22.9        | 542.2 ±22.9       | 1.32 ±0.06       | 8.89 ±0.53                  | 6.73                    |
-| 20 months     | 160.4 ±8.4           | 767.8 ±26.7        | 607.4 ±26.7       | 1.32 ±0.06       | 8.98 ±0.54                  | 6.80                    |
-| 22 months     | 160.4 ±13.2          | 804.5 ±30.4        | 644.1 ±30.4       | 1.27 ±0.02       | 9.02 ±0.52                  | 7.10                    |
+<table>
+    <tr>
+        <td>Slaughter Age</td>
+        <td>Initial Weight (kg)</td>
+        <td>Final Weight (kg)</td>
+        <td>Avg. Weight (kg)</td>
+        <td>Daily Gain (kg)</td>
+        <td>Dry Matter Intake (kg/day)</td>
+        <td>Feed per kg Gain (kg)</td>
+    </tr>
+    <tr>
+        <td>18 months</td>
+        <td>160.7 ±10.3</td>
+        <td>702.9 ±22.9</td>
+        <td>542.2 ±22.9</td>
+        <td>1.32 ±0.06</td>
+        <td>8.89 ±0.53</td>
+        <td>6.73</td>
+    </tr>
+    <tr>
+        <td>20 months</td>
+        <td>160.4 ±8.4</td>
+        <td>767.8 ±26.7</td>
+        <td>607.4 ±26.7</td>
+        <td>1.32 ±0.06</td>
+        <td>8.98 ±0.54</td>
+        <td>6.80</td>
+    </tr>
+    <tr>
+        <td>22 months</td>
+        <td>160.4 ±13.2</td>
+        <td>804.5 ±30.4</td>
+        <td>644.1 ±30.4</td>
+        <td>1.27 ±0.02</td>
+        <td>9.02 ±0.52</td>
+        <td>7.10</td>
+    </tr>
+</table>
 
 Longer fattening periods increase feed intake and feed conversion ratio, raising production costs and negatively affecting productivity.
 
@@ -65,14 +217,43 @@ Longer fattening periods increase feed intake and feed conversion ratio, raising
 
 ## Feed-Convertible Byproducts
 
-| Category           | Type                 | Examples                                |
-|--------------------|----------------------|-----------------------------------------|
-| Agricultural waste | Fruit, grain         | Peels, bran, corn husk, rice bran       |
-| Food industry      | Processing byproducts| Tofu cake, juice residue, starch waste  |
-| Livestock byproducts| Meat, organs        | Meat meal, bone meal, poultry waste     |
-| Forest products    | Leaves, bark         | Pine needles, sawdust                   |
-| Edible wild plants | Herbs, seeds         | Acorns, chestnuts, field plants         |
-| Others             | Leftover food        | Cooked rice, soup, fermented leftovers  |
+<table>
+    <tr>
+        <td>Category</td>
+        <td>Type</td>
+        <td>Examples</td>
+    </tr>
+    <tr>
+        <td>Agricultural waste</td>
+        <td>Fruit, grain</td>
+        <td>Peels, bran, corn husk, rice bran</td>
+    </tr>
+    <tr>
+        <td>Food industry</td>
+        <td>Processing byproducts</td>
+        <td>Tofu cake, juice residue, starch waste</td>
+    </tr>
+    <tr>
+        <td>Livestock byproducts</td>
+        <td>Meat, organs</td>
+        <td>Meat meal, bone meal, poultry waste</td>
+    </tr>
+    <tr>
+        <td>Forest products</td>
+        <td>Leaves, bark</td>
+        <td>Pine needles, sawdust</td>
+    </tr>
+    <tr>
+        <td>Edible wild plants</td>
+        <td>Herbs, seeds</td>
+        <td>Acorns, chestnuts, field plants</td>
+    </tr>
+    <tr>
+        <td>Others</td>
+        <td>Leftover food</td>
+        <td>Cooked rice, soup, fermented leftovers</td>
+    </tr>
+</table>
 
 ---
 
